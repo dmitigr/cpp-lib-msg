@@ -17,7 +17,7 @@
 #ifndef DMITIGR_MSG_SQLITE_CONVEYOR_HPP
 #define DMITIGR_MSG_SQLITE_CONVEYOR_HPP
 
-#include "../fsx/filesystem.hpp"
+#include "../base/fsx.hpp"
 #include "../os/pid.hpp"
 #include "../rajson/conversions.hpp"
 #include "conveyor.hpp"

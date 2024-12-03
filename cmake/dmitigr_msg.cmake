@@ -29,7 +29,7 @@ set(dmitigr_msg_headers
 # Dependencies
 # ------------------------------------------------------------------------------
 
-set(dmitigr_libs_msg_deps base fsx os rajson sqlixx)
+set(dmitigr_libs_msg_deps base os rajson sqlixx)
 
 # ------------------------------------------------------------------------------
 # Tests
