@@ -17,7 +17,7 @@
 #ifndef DMITIGR_MSG_MAIL_PROCESSOR_HPP
 #define DMITIGR_MSG_MAIL_PROCESSOR_HPP
 
-#include "../os/ipc_pipe.hpp"
+#include "../nix/ipc_pipe.hpp"
 
 #include "message.hpp"
 #include "processor.hpp"
@@ -48,7 +48,7 @@ public:
     args.push_back(message.subject);
     for (const auto& recipient : message.recipients)
       args.push_back(recipient);
-    return os::ipc::pp::exec_and_wait("mail", args, message.content,
+    return nix::ipc::pp::exec_and_wait("mail", args, message.content,
       std::cout, std::cerr);
   }
 };

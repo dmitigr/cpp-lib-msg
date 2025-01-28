@@ -31,7 +31,7 @@ public:
       .append("\n");
     content.append("subject: ").append(message.subject).append("\n");
     content.append("content: ").append(message.content).append("\n");
-    return dmitigr::os::ipc::pp::exec_and_wait("cat", args, content,
+    return dmitigr::nix::ipc::pp::exec_and_wait("cat", args, content,
       std::cout, std::cerr);
   }
 };
