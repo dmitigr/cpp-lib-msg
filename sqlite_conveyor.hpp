@@ -17,7 +17,6 @@
 #ifndef DMITIGR_MSG_SQLITE_CONVEYOR_HPP
 #define DMITIGR_MSG_SQLITE_CONVEYOR_HPP
 
-#include "../base/fsx.hpp"
 #include "../os/pid.hpp"
 #include "../rajson/conversions.hpp"
 #include "conveyor.hpp"
@@ -26,6 +25,7 @@
 #include "message.hpp"
 
 #include <algorithm>
+#include <filesystem>
 #include <mutex>
 
 namespace dmitigr::msg {
